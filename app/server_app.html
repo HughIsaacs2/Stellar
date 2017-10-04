@@ -1,0 +1,40 @@
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>HTTP Webserver</title>
+		<meta content="#424242" name="theme-color" id="theme-color" />
+		
+    <script type="text/javascript" src="/webtorrent.min.js"></script>
+    <!--<script type="text/javascript" src="/chrome-net.js"></script>-->
+    <!-- <script type="text/javascript" src="/wsc-chrome.min.js"></script> -->
+	<!--<script type="text/javascript" src="/webdat.js"></script>-->
+	<script type="text/javascript" src="/server_script.js" defer="true" lazyload="1"></script>
+	
+	<link type="text/css" href="/style.css" rel="stylesheet" lazyload="1" />
+	<style type="text/css" rel="stylesheet">
+	#logger {
+	max-height: 100px;
+    overflow-y: auto;
+    border-top: solid 1px #c6c6c6;
+    border-bottom: solid 1px #c6c6c6;
+	}
+	</style>
+    </head>
+    <body>
+      <div class="hero-unit">
+        <h1>Other Web server</h1>
+         <p>Serving Torrent and Dat sites locally<br/><sub>Well, only <a href="https://webtorrent.io/" target="_blank">WebTorrent</a> for now.</sub><br/><br/><a href="http://23f6806455d3ab709331ac4203ff3d321281d571.torrent_site/" target="_blank" class="button">Test</a></p>
+         <p style="display:none;">
+           <input type="file" webkitdirectory id="directory" class="button" /><br />
+           <select id="hosts">
+             <option value="127.0.0.1">local - 127.0.0.1</option>
+           </select>
+           <input type="text" id="port" value="9989" disabled/><br />
+           <button id="start" class="btn btn-primary btn-large" disabled>Start</button>
+           <button id="stop" class="btn btn-warning btn-large"  disabled>Stop</button>
+         </p>
+      </div>
+      <pre id="logger"></pre>
+    </body>
+	
+</html>

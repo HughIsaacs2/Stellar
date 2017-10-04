@@ -1,0 +1,39 @@
+{
+        "name": "Other Web [Extension]",
+          "short_name": "Other Web",
+  "description": "Other Web extension.",
+         "manifest_version": 2,
+          
+  "version": "0.0.2",
+  "version_name": "0.0.1 alpha (Debug)",
+        "permissions": ["tabs", "webRequestBlocking", "webRequest", "webNavigation", "proxy", "*://*.dat_site/*", "*://*.torrent_site/*", "storage", "unlimitedStorage"],
+		"optional_permissions": [ "tabs", "notifications", "background", "*://*/" ],
+		"externally_connectable": { "ids": [ "pgdnnmekclkafnpfofleebhhnmolopgl" ] },
+		"omnibox": { "keyword" : "other_web" },
+		  "web_accessible_resources": [
+    "redirect.html",
+    "webtorrent.min.js",
+    "redirect_script.js"
+  ],
+		"options_page": "options.html",
+		"background": {
+          "persistent": true,
+          "scripts": ["background.js"]
+        },
+          "icons": {
+            "16": "logo_16.png",
+            "24": "logo.png",
+            "32": "logo.png",
+			"128": "logo_128.png"
+          },
+        "browser_action": {
+          "default_icon": {
+            "16": "logo_16.png",
+            "24": "logo.png",
+            "32": "logo.png",
+			"128": "logo_128.png"
+          },
+          "default_title": "Other Web",
+          "default_popup": "popup.html"
+        }
+}
