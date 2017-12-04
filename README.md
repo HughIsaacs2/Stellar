@@ -1,5 +1,5 @@
 # Stellar
-**Not working on this one anymore as [the name Stellar was already taken for a cryptocurrency](https://www.stellar.org/). Instead check out [DatPart](https://github.com/hughisaacs2/DatPart).**
+**Not working on this repo anymore as [the name Stellar was already taken for a cryptocurrency](https://www.stellar.org/). Instead check out [DatPart](https://github.com/hughisaacs2/DatPart).**
 
 ~~Proof of concept WebTorrent and WebRTC Dat site viewer for Chrome OS (currently only works with WebTorrent sites).~~
 
